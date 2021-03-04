@@ -1,0 +1,28 @@
+<div style="font-size: 50px; line-height: 100px; background-color: pink;">
+  <!-- 对齐的线 -->
+  <!-- middle 中心线 ；line-top，bottom已经被撑开 -->
+  <div style="vertical-align: top; overflow: visible; display: inline-block; width: 1px; height: 1px;">
+    <div style="width: 1000px; height: 1px; background: red;"></div>
+  </div>
+
+  <span>Hello good 中文</span>
+  <!-- 默认是基线对齐 -->
+  <!-- 盒的下边缘跟文字的基线去做了对齐 -->
+  <!-- <div style="line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;"></div> -->
+
+  <!-- 加文字基线位置就变了 -->
+  <!-- 基线变成了里面文字的最后一行的基线 -->
+  <!-- <div style="line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;">b</div> -->
+
+  <!-- 加c基线就变成了下一行 -->
+  <!-- <div style="line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;">b<br/>c</div> -->
+
+  <!-- 第一个特别注意的问题 行内盒 inline-block 它的基线是随着自己里面的文字去变化的；不建议给行内盒使用基线对齐的；使用vertical-align -->
+  <!-- <div style="vertical-align: top; line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;">b<br/>c</div> -->
+
+  <!-- 跟text-bottom, text-top对齐 -->
+  <div style="vertical-align: text-bottom; line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;">b<br/>c</div>
+  <div style="vertical-align: text-top; line-height: 70px; width: 100px; height: 150px; background-color: aqua; display: inline-block;">b<br/>c</div>
+
+
+</div>
