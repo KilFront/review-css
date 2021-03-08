@@ -1,0 +1,9 @@
+<body>
+  <div style="width:100px; height: 100px; background-color: aqua; margin: 20px"></div>
+
+  <!-- visible 三个div外边距折叠 -->
+  <!-- hidden 创建新的BFC情况；里面不属于同一个BFC边距不折叠，外面属于边距折叠 -->
+  <div style="margin-top: 30px; background-color: pink; overflow: visible;">
+    <div style="width:100px; height: 100px; background-color: aqua; margin: 20px"></div>
+  </div>
+</body>
